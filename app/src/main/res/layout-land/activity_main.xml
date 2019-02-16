@@ -224,15 +224,6 @@
         tools:layout_editor_absoluteX="296dp"
         tools:layout_editor_absoluteY="0dp" />
 
-    <Button
-        android:id="@+id/buttonNeg"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
-        android:layout_marginStart="8dp"
-        android:minWidth="48dp"
-        android:text="Neg"
-        app:layout_constraintBaseline_toBaselineOf="@+id/buttonDivide"
-        app:layout_constraintLeft_toRightOf="@+id/buttonDivide" />
+
 
 </android.support.constraint.ConstraintLayout>

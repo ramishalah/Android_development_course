@@ -87,29 +87,10 @@ public class MainActivity extends AppCompatActivity {
         buttonMinus.setOnClickListener(opListener);
         buttonPlus.setOnClickListener(opListener);
 
-        Button buttonNeg = (Button) findViewById(R.id.buttonNeg);
-
-        buttonNeg.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                String value = newNumber.getText().toString();
-                if(value.length() == 0) {
-                    newNumber.setText("-");
-                } else {
-                    try {
-                        Double doubleValue = Double.valueOf(value);
-                        doubleValue *= -1;
-                        newNumber.setText(doubleValue.toString());
-                    } catch(NumberFormatException e) {
-                        // newNumber was "-" or ".", so clear it
-                        newNumber.setText("");
-                    }
-                }
-
-            }
-        });
     }
 
+
+    // This is only for landing scape if you want to restore the state.
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         outState.putString(STATE_PENDING_OPERATION, pendingOperation);
