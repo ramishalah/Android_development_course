@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
     private Double operand1 = null;
     private String pendingOperation = "=";
 
-    // this is for the save instance state
+    // this stuff is for the save instance state
     private static final String STATE_PENDING_OPERATION = "PendingOperation";
     private static final String STATE_OPERAND1 = "Operand1";
 
@@ -110,6 +110,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void performOperation(Double value, String operation) {
+        // we perform the operation depending on the operation string
         if (null == operand1) {
             operand1 = value;
         } else {
